@@ -6,7 +6,7 @@ import router from './Src/Modules/Users/user.routes.js'
 import { globalErrorHandling } from './Src/utils/errorHandling.js'
 config()
 const app = express()
-const port = 3001
+const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(cors())
 
